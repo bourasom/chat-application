@@ -73,7 +73,7 @@ public class DocumentService implements ResourceContainer {
 
   private static final Log       LOG                    = ExoLogger.getLogger(DocumentService.class.getName());
 
-  private RepositoryService      repositoryService_;
+  private JCRService      repositoryService_;
 
   private NodeHierarchyCreator   nodeHierarchyCreator_;
 
