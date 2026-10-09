@@ -77,7 +77,6 @@ public class DocumentService implements ResourceContainer {
 
   private NodeHierarchyCreator   nodeHierarchyCreator_;
 
-  private SessionProviderService sessionProviderService_;
 
   private SpaceService           spaceService_;
 
