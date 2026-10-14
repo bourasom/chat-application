@@ -127,8 +127,8 @@ public class DocumentService implements ResourceContainer {
     // The upload process duplicates (partially) the one from Gatein (org.exoplatform.web.handler.UploadHandler) since
     // the upload limit can only be set this way in UploadService
     if(action == null || action.equals("upload")) {
-      uploadService_.createResource(httpServletRequest);
-      uploadService_.addUpload(uploadId, getUploadLimitInMB());
+      uploadService_.createUploadResource(httpServletRequest);
+      uploadService_.addUploadLimit(uploadId, getUploadLimitInMB());
     } else if(action.equals("progress")) {
       if (uploadId == null) {
         return Response.serverError().build();
